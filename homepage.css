@@ -1,0 +1,463 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding: 0 ;
+    margin: 0 ;
+    overflow: hidden;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+button:hover {
+    background-color: #0A8DC2 !important;
+}
+input {
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none !important;
+}
+ul li{
+    list-style-type: none;
+}
+
+.root {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+
+/* styles for menu  */
+.menu {
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px #0000001A;
+}
+
+.menu__box {
+    padding: 0 160px;
+    width: 100%;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 324px;
+    height: 67px;
+}
+
+.about__link {
+    display: inline-flex;
+    color: #221F1F;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__link_color {
+    color: #0A8DC2;
+}
+
+.about__link_background {
+    background-color: #0A8DC2;
+    color: #FFFFFF;
+    width: 109px;
+    height: 47px;
+    text-align: center;
+    border-radius: 8px;
+}
+.about__link_background:hover {
+    background-color: #DD73E3
+}
+
+/* styles for main block */
+.main-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 129px 107px 129px 160px;
+}
+
+.main-block__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.account-info {
+    font-size: 56px;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    flex: 1 1 auto;
+}
+
+.account-info span {
+    color: #0A8DC2;
+}
+
+.account-text {
+    margin: 51px 0 57px;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    color: #000000;
+    flex: 1 1 auto;
+}
+
+.account-btn {
+    width: 371px;
+    height: 69px;
+    background: transparent linear-gradient(90deg, #0A8DC2 0%, #DD73E3 100%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+}
+
+.account-btn span {
+    font-size: 32px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.main-block__image img {
+    width: 922px;
+    height: 623px;
+}
+
+.menu-icon {
+    display: none;
+    margin: 15px 5px;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: none;
+    margin: 15px 5px;
+    cursor: pointer;
+}
+
+.close-icon img {
+    width: 10px;
+    height: 10px;
+}
+
+.about_active {
+    background-color: #0A8DC2;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 55px;
+    right: 0;
+    transform: scale(0);
+    transition: .2s linear;
+    width: 100%;
+}
+
+@media screen and (max-width: 1866px) {
+    .account-info {
+        font-size: 48px;
+    }
+    .account-text {
+        font-size: 29px;
+    }
+    .main-block__image img {
+        width: 760px;
+        height: 620px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .account-info {
+        font-size: 46px;
+    }
+    .account-text {
+        font-size: 23px;
+    }
+    .main-block__image img {
+        width: 725px;
+        height: 590px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .account-info {
+        font-size: 30px;
+    }
+    .account-text {
+        font-size: 17px;
+    }
+    .main-block__image img {
+        width: 560px;
+        height: 435px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu__box {
+        padding: 0 67px;
+    }
+    .logo img {
+        width: 295px;
+        height: 65px;
+    }
+    .about__link {
+        font-size: 14px;
+    }
+    .about__link_background {
+        width: 88px;
+        height: 40px;
+    }
+}
+/* 823 */
+@media screen and (max-width: 1024px) {
+    .logo img {
+        width: 240px;
+        height: 55px;
+    }
+    .about__link {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .about__link_background {
+        width: 60px;
+        height: 25px;
+    }
+    .main-block {
+        padding: 60px 70px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .account-info,
+    .account-text {
+        text-align: center;
+    }
+    .main-block__text {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .account-info {
+        font-size: 54px;
+    }
+    .account-text {
+        font-size: 28px;
+    }
+    .account-btn {
+        width: 500px;
+        height: 100px;
+    }
+    .account-btn span {
+        font-size: 48px;
+    }
+    .main-block__image img {
+        width: 680px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .account-info {
+        font-size: 48px;
+    }
+    .account-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .menu__box {
+        padding: 0 25px;
+    }
+    .account-info {
+        font-size: 36px;
+    }
+    .account-text {
+        font-size: 20px;
+    }
+    .account-btn {
+        width: 400px;
+        height: 85px;
+    }
+    .account-btn span {
+        font-size: 36px;
+    }
+    .main-block__image img {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .main-block {
+        padding: 60px 28px;
+    }
+    .main-block__image img {
+        width: 540px;
+        height: 440px;
+    }
+    .account-info {
+        font-size: 45px;
+    }
+    .account-text {
+        font-size: 24px;
+    }
+    .main-block__image img {
+        width: 570px;
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo img {
+        width: 200px;
+        height: 40px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__link {
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    .account-info {
+        font-size: 38px;
+    }
+    .account-text {
+        font-size: 20px;
+    }
+    .account-btn {
+        width: 425px;
+        height: 100px;
+    }
+    .account-btn span {
+        font-size: 42px;
+    }
+    .main-block__image img {
+        width: 490px;
+        height: 390px;
+    }
+    .main-block {
+        padding: 60px 40px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .logo {
+        margin-top: 7px;
+    }
+    .menu__box {
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 10px 5px;
+        height: 55px;
+    }
+    .about-block {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .about {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        transform: scale(0);
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .about__link {
+        font-size: 10px;
+        margin-left: 10px;
+        color: white;
+    }
+    .about__link_background {
+        background-color: #DD73E3 ;
+        color: white;
+    }
+    .main-block__image img {
+        width: 390px;
+        height: 320px;
+    }
+    .account-info {
+        font-size: 24px;
+    }
+    .account-text {
+        font-size: 13px;
+    }
+    .account-btn {
+        width: 290px;
+        height: 50px;
+    }
+    .account-btn span {
+        font-size: 26px;
+    }
+    .main-block {
+        padding: 60px 107px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main-block__image img {
+        width: 320px;
+        height: 270px;
+    }
+}
+
+@media  screen and (max-width: 340px) {
+    .logo img {
+        width: 162px;
+        height: 31px;
+    }
+    .account-info {
+        font-size: 18px;
+    }
+    .account-text {
+        font-size: 10px;
+        margin: 31px 0 37px;
+    }
+    .account-btn {
+        width: 140px;
+        height: 40px;
+    }
+    .account-btn span {
+        font-size: 14px;
+    }
+    .main-block {
+        padding: 30px 18px;
+    }
+    .main-block__image img {
+        width: 250px;
+        height: 210px;
+    }
+    .about__link {
+        font-size: 8px;
+        margin-left: 6px;
+    }
+    .about__link_background {
+        width: 42px;
+        height: 19px;
+    }
+}

@@ -272,7 +272,7 @@ if ($isfw!==false) {
 	echo "<body class=\"notfw\">\n";
 }
 
-echo '<div class="mainbody">';
+echo '<div class="mainbody root">';
 
 $insertinheaderwrapper = ' '; //"<h1>$coursename</h1>";
 if (isset($insertinheaderwrapper)) {

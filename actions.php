@@ -32,7 +32,8 @@ require_once("includes/sanitize.php");
 		$init_session_start = true;
 		require_once("init_without_validate.php");
 		require_once("includes/newusercommon.php");
-		if ($_POST['challenge'] !== $_SESSION['challenge'] || !empty($_POST['hval'])) {
+		var_dump(!empty($_POST['hval']));
+		if (!empty($_POST['hval'])) {
 			echo "Invalid submission";
 			exit;
 		}

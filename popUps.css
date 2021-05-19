@@ -1,0 +1,436 @@
+.pop-up {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for sign-up popup */
+.pop-up__sign-up {
+    width: 580px;
+    height: 791px;
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-up form {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pop-up form .title {
+    font-size: 24px;
+    color: #0A8DC2;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.pop-up form .subtitle .text {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0A8DC2;
+    text-transform: capitalize;
+}
+
+.pop-up form .subtitle .text_color {
+    color: #B2B2B2;
+    margin-left: 25px;
+}
+
+.form-list p {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-list input {
+    width: 340px;
+    height: 46px;
+    border: 1px solid #B2B2B2;
+    border-radius: 8px;
+    color: #000000;
+    opacity: 0.5;
+    text-align: left;
+    padding: 12px 16px 11px;
+}
+
+.accept {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.accept span {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+}
+
+.accept a {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: underline;
+    color: #000000;
+    margin-left: 15px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 46px;
+    border-radius: 8px;
+    background-color: #0A8DC2;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.form-question {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.form-question a {
+    display: inline-block;
+    margin-left: 7px;
+    font-weight: 700;
+}
+
+.footer-color {
+    width: 100%;
+    height: 32px;
+    background: linear-gradient(90deg, #0A8DC2 0%, #C174F2 46%, #FC578E 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 24px 24px;
+    z-index: 2;
+}
+
+/* styles for log-in popup */
+.pop-up__login {
+    width: 580px;
+    height: 455px;
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 24px;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accept_block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.accept_block p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+}
+
+.accept_block .accept__link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* styles for forgot-password popup */
+.pop-up__forgot-password {
+    width: 580px;
+    height: 455px;
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-up__forgot-password form {
+    margin: auto;
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pop-up__forgot-password form .info {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    width: 350px;
+}
+
+.submit-cancel {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.cancel-btn {
+    width: 158px;
+    height: 46px;
+    border: 1px solid #0A8DC2;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0A8DC2;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sub-btn {
+    width: 158px;
+    height: 46px;
+    background-color: #0A8DC2;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* styles for reset-your-password popup */
+.pop-up__reset-password {
+    width: 580px;
+    height: 455px;
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 24px;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .pop-up__sign-up {
+        width: 359px;
+        height: 570px;
+    }
+    .pop-up form .title {
+        font-size: 20px;
+    }
+    .pop-up form .subtitle .text {
+        font-size: 15px;
+    }
+    .form-list p {
+        font-size: 15px;
+    }
+    .form-list input {
+        width: 285px;
+        height: 35px;
+    }
+    .accept span {
+        font-size: 13px;
+    }
+    .accept a {
+        font-size: 13px;
+    }
+    .submit-btn {
+        width: 285px;
+        height: 35px;
+    }
+    .form-question {
+        font-size: 13px;
+    }
+    .pop-up__login {
+        width: 465px;
+        height: 360px;
+    }
+    .pop-up__forgot-password {
+        width: 465px;
+        height: 360px;
+    }
+    .pop-up__reset-password {
+        width: 465px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .pop-up__sign-up {
+        width: 95%;
+        height: 570px;
+    }
+    .pop-up form .title {
+        font-size: 16px;
+    }
+    .pop-up form .subtitle .text {
+        font-size: 12px;
+    }
+    .form-list p {
+        font-size: 12px;
+    }
+    .form-list input {
+        width: 280px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .accept span {
+        font-size: 11px;
+    }
+    .accept a {
+        font-size: 11px;
+    }
+    .submit-btn {
+        width: 280px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .form-question {
+        font-size: 11px;
+    }
+    .pop-up__login {
+        width: 95%;
+        height: 300px;
+    }
+    .pop-up__forgot-password {
+        width: 95%;
+        height: 300px;
+    }
+    .pop-up__reset-password {
+        width: 95%;
+        height: 300px;
+    }
+    .accept_block {
+        justify-content: flex-start;
+    }
+    .pop-up__forgot-password form,
+    .pop-up__reset-password form {
+        width: 90%;
+    }
+    .cancel-btn {
+        width: 115px;
+        height: 30px;
+    }
+    .sub-btn {
+        width: 115px;
+        height: 30px;
+    }
+    .pop-up__forgot-password form .info {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .pop-up__sign-up {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pop-up__sign-up {
+        height: 391px;
+    }
+    .pop-up form .title {
+        font-size: 14px;
+    }
+    .pop-up form .subtitle .text {
+        font-size: 11px;
+    }
+    .form-list p {
+        font-size: 9px;
+    }
+    .form-list input {
+        width: 200px;
+        height: 25px;
+        font-size: 9px;
+    }
+    .accept {
+        margin: 5px 0;
+    }
+    .accept input {
+        width: 9px;
+        height: 9px;
+    }
+    .accept span {
+        font-size: 9px;
+    }
+    .accept a {
+        font-size: 9px;
+    }
+    .submit-btn {
+        width: 200px;
+        height: 25px;
+        font-size: 10px;
+        margin: 5px 0;
+    }
+    .form-question {
+        font-size: 9px;
+    }
+    .accept_block p {
+        font-size: 9px;
+    }
+    .pop-up__login {
+        height: 205px;
+    }
+    .pop-up__forgot-password {
+        height: 205px;
+    }
+    .pop-up__reset-password {
+        height: 205px;
+    }
+    .pop-up__forgot-password form .info {
+        font-size: 9px;
+    }
+    .cancel-btn {
+        width: 75px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .sub-btn {
+        width: 75px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .form-question_margin {
+        margin-right: 0px;
+    }
+}
+
+
+

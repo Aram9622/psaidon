@@ -46,6 +46,7 @@ if (isset($CFG['GEN']['footerscriptinclude'])) {
 	require("$curdir/{$CFG['GEN']['footerscriptinclude']}");
 }
 ?>
+<script src="main.js"></script>
 </body>
 </html>
 <?php
